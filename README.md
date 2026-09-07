@@ -6,10 +6,10 @@
 
 ## 在线体验
 
-- 试玩版：https://crow-reading-adventure.widebook.chatgpt.site
-- 给大人的完整学习脚本：https://crow-reading-adventure.widebook.chatgpt.site/script.html
+- 试玩版：https://wangbo67.github.io/primary-school-ai-learning-companion/
+- 给大人的完整学习脚本：https://wangbo67.github.io/primary-school-ai-learning-companion/script.html
 
-当前在线版本为私密预览。面向其他人正式发布时，应另行确定公开托管方式和访问范围。
+网站由 GitHub Pages 公开托管。推送到 `main` 后，GitHub Actions 会自动构建和发布。
 
 ## 产品方向
 
@@ -45,6 +45,7 @@ npm run dev
 node --test tests/lesson.test.mjs
 npx tsc --noEmit
 npm run build
+npm run build:pages
 ```
 
 修改学习脚本后，用 `python3 docs/render_script.py` 更新可打印 HTML。
